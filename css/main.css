@@ -32,9 +32,37 @@ body {
     padding: 50px 0;
 }
 
+.left-col {
+    width: 360px;
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+.left-col h1 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.right-col {
+    width: 370px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
+.right-col h1 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+}
+
 .biome {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     margin: 0 auto;
     opacity: 0;
 }
@@ -45,10 +73,10 @@ body {
 }
 
 .tree {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     position: absolute;
-    top: 0px;
+    top: -50px;
     left: 0;
     right: 0;
     margin: 0 auto;

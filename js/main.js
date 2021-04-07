@@ -29,7 +29,7 @@ tl.from('path', {
     },
 });
 
-tl.from('.biome', 2, {
+tl.from('.biome', {
     scrollTrigger: {
         trigger: '.anim-container',
         pin: true,
@@ -37,4 +37,28 @@ tl.from('.biome', 2, {
         scrub: true,
     },
     opacity: 1,
+});
+
+tl.from('.left-col', {
+    scrollTrigger: {
+        trigger: '.anim-container',
+        pin: true,
+        // markers: true,
+        scrub: true,
+    },
+    ease: 'power1.out',
+    opacity: 0,
+    y: 200,
+});
+
+tl.from('.right-col', {
+    scrollTrigger: {
+        trigger: '.anim-container',
+        pin: true,
+        // markers: true,
+        scrub: true,
+    },
+    ease: 'power1.out',
+    opacity: 0,
+    y: 200,
 });

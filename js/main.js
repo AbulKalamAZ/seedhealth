@@ -1,3 +1,5 @@
+document.querySelector('.tree').style.opacity = 1;
+
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
     defaults: { duration: 1, ease: Back.easeOut.config(2), opacity: 0 },

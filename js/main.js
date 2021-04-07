@@ -14,24 +14,9 @@ tree.style.opacity = 1;
 leftCol.style.opacity = 1;
 rightCol.style.opacity = 1;
 
-paths.forEach((path) => {
-    let length = path.getTotalLength();
-
-    new TweenMax.set(path, { strokeDasharray: length });
-});
-
 const tl = gsap.timeline({
     defaults: { duration: 1, ease: Back.easeOut.config(2), opacity: 0 },
 });
-
-// tl.to('.tree', {
-//     scrollTrigger: {
-//         trigger: '.anim-container',
-//         pin: true,
-//         // markers: true,
-//         scrub: true,
-//     },
-// });
 
 tl.from('path', {
     opacity: 0,
@@ -52,7 +37,6 @@ tl.from('.biome', {
     scrollTrigger: {
         trigger: '.anim-container',
         pin: true,
-        // markers: true,
         scrub: true,
     },
     opacity: 1,
@@ -70,14 +54,16 @@ tl.from('.left-col', {
     y: 200,
 });
 
-tl.from('.right-col', {
-    scrollTrigger: {
-        trigger: '.anim-container',
-        pin: true,
-        // markers: true,
-        scrub: true,
-    },
-    ease: 'power1.out',
-    opacity: 0,
-    y: 200,
-});
+if (window.innerWidth < 376) {
+    tl.from('.right-col', {
+        scrollTrigger: {
+            trigger: '.anim-container',
+            pin: true,
+            // markers: true,
+            scrub: true,
+        },
+        ease: 'power1.out',
+        opacity: 0,
+        y: 200,
+    });
+}

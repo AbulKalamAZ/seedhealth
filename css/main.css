@@ -102,9 +102,28 @@ body {
         text-align: center;
     }
 
+    .left-col {
+        display: none;
+    }
+
+    .right-col {
+        position: static;
+    }
+
     .biome {
         width: 100%;
         height: auto;
+        margin: 0 auto;
+        opacity: 0;
+    }
+
+    .tree {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -160px;
+        left: 0;
+        right: 0;
         margin: 0 auto;
         opacity: 0;
     }

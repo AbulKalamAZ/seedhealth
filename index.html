@@ -21,15 +21,15 @@
       </div>
       <div class="tree">
         <svg width="789" height="790" viewBox="0 0 789 790" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M384.246 405.271L394.426 394.979" stroke="white" stroke-miterlimit="10"/>
-          <path d="M348.888 666.25L392.036 409.246" stroke="white" stroke-miterlimit="10"/>
-          <path d="M392.037 409.251C385.997 408.244 381.272 403.544 380.176 397.522" stroke="white" stroke-miterlimit="10"/>
+          <path d="M384.246 405.271L394.426 394.979" class="level-1" stroke="white" stroke-miterlimit="10"/>
+          <path d="M348.888 666.25L392.036 409.246" class="level-1" stroke="white" stroke-miterlimit="10"/>
+          <path d="M392.037 409.251C385.997 408.244 381.272 403.544 380.176 397.522" class="level-1" stroke="white" stroke-miterlimit="10"/>
           <path d="M380.176 397.52L365.922 400.082" stroke="white" stroke-miterlimit="10"/>
-          <path d="M360.282 755.312L368.477 668.832" stroke="white" stroke-miterlimit="10"/>
-          <path d="M368.476 668.835C355.356 667.592 342.324 665.415 329.527 662.294" stroke="white" stroke-miterlimit="10"/>
-          <path d="M329.529 662.293L326.118 676.368" stroke="white" stroke-miterlimit="10"/>
-          <path d="M337.037 752.336L348.521 680.855" stroke="white" stroke-miterlimit="10"/>
-          <path d="M348.521 680.856C333.458 678.438 318.629 674.835 304.15 670.081" stroke="white" stroke-miterlimit="10"/>
+          <path d="M360.282 755.312L368.477 668.832" class="level-1" stroke="white" stroke-miterlimit="10"/>
+          <path d="M368.476 668.835C355.356 667.592 342.324 665.415 329.527 662.294" class="level-1" stroke="white" stroke-miterlimit="10"/>
+          <path d="M329.529 662.293L326.118 676.368" class="level-1" stroke="white" stroke-miterlimit="10"/>
+          <path d="M337.037 752.336L348.521 680.855" class="level-1" stroke="white" stroke-miterlimit="10"/>
+          <path d="M348.521 680.856C333.458 678.438 318.629 674.835 304.15 670.081" class="level-1" stroke="white" stroke-miterlimit="10"/>
           <path d="M304.122 670.102L299.606 683.854" stroke="white" stroke-miterlimit="10"/>
           <path d="M314.021 747.885L326.885 691.416" stroke="white" stroke-miterlimit="10"/>
           <path d="M326.886 691.412C308.464 687.227 290.495 681.321 273.164 673.784" stroke="white" stroke-miterlimit="10"/>
@@ -307,34 +307,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
-    <script>
-
-      gsap.registerPlugin(ScrollTrigger);
-      // const tl = new TimelineLite();
-
-      gsap.to(".tree", {
-        scrollTrigger: {
-          trigger: ".anim-container",
-          pin: true,
-          // markers: true,
-          scrub: true
-        },
-        opacity: 1,
-        scale: 1
-        
-      })
-
-      gsap.to(".biome", {
-        scrollTrigger: {
-          trigger: ".anim-container",
-          pin: true,
-          // markers: true,
-          scrub: true
-        },
-        opacity: 0,
-        
-      })
-      
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -37,6 +37,7 @@ body {
     position: absolute;
     left: 0;
     top: 120px;
+    opacity: 0;
 }
 
 .left-col h1 {
@@ -50,6 +51,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0px;
+    opacity: 0;
 }
 
 .right-col h1 {
@@ -85,4 +87,25 @@ body {
 
 .tree svg {
     width: 100%;
+}
+
+/* screen smaller than 375px */
+
+@media only screen and (max-width: 375px) {
+    .wrapper h1 {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .biome {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0;
+    }
 }

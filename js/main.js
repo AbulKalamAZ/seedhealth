@@ -1,6 +1,25 @@
-document.querySelector('.tree').style.opacity = 1;
-
+// Registering scrolltrigger
 gsap.registerPlugin(ScrollTrigger);
+
+// Variables
+const paths = document.querySelectorAll('path');
+
+const tree = document.querySelector('.tree');
+const leftCol = document.querySelector('.left-col');
+const rightCol = document.querySelector('.right-col');
+
+// Hiding images on load
+
+tree.style.opacity = 1;
+leftCol.style.opacity = 1;
+rightCol.style.opacity = 1;
+
+paths.forEach((path) => {
+    let length = path.getTotalLength();
+
+    new TweenMax.set(path, { strokeDasharray: length });
+});
+
 const tl = gsap.timeline({
     defaults: { duration: 1, ease: Back.easeOut.config(2), opacity: 0 },
 });
@@ -17,8 +36,8 @@ const tl = gsap.timeline({
 tl.from('path', {
     opacity: 0,
     stagger: {
-        each: 0.05,
-        from: 'edges',
+        each: 0.5,
+        from: 'center',
         grid: 'auto',
     },
     scrollTrigger: {

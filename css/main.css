@@ -107,7 +107,8 @@ body {
     }
 
     .right-col {
-        position: static;
+        position: relative;
+        top: 80px;
     }
 
     .biome {

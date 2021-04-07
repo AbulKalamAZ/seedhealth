@@ -54,7 +54,7 @@ tl.from('.left-col', {
     y: 200,
 });
 
-if (window.innerWidth < 376) {
+if (window.innerWidth > 376) {
     tl.from('.right-col', {
         scrollTrigger: {
             trigger: '.anim-container',

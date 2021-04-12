@@ -37,7 +37,7 @@ body {
 .left-col {
     width: 360px;
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 120px;
     opacity: 0;
 }
@@ -55,7 +55,7 @@ body {
 .right-col {
     width: 370px;
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 0px;
     opacity: 0;
     text-align: left;

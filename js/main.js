@@ -34,25 +34,30 @@ timeline
         scrollTrigger: {
             trigger: '.anim-container',
             pin: true,
+            start: 'top 10%',
+            end: 'bottom 25%',
             // markers: true,
-            scrub: true,
+            scrub: 2,
         },
     })
     .to('.biome', {
         scrollTrigger: {
             trigger: '.anim-container',
             pin: true,
-            scrub: true,
+            // markers: true,
+            start: 'top 10%',
+            end: 'bottom 25%',
+            scrub: 2,
         },
         opacity: 0,
     })
     .from('.left-col', {
         scrollTrigger: {
             trigger: '.anim-container',
-            start: 'top 10%',
-            // pin: true,
+            start: 'top 20%',
+            end: 'top 20%',
             // markers: true,
-            scrub: true,
+            scrub: 2,
         },
         ease: 'power1.out',
         opacity: 0,
@@ -63,10 +68,10 @@ timeline
         {
             scrollTrigger: {
                 trigger: '.left-col',
-                // pin: true,
                 start: 'top 10%',
+                end: 'top 10%',
                 // markers: true,
-                scrub: true,
+                scrub: 2,
             },
             ease: 'power1.out',
             opacity: 0,
